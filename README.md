@@ -9,7 +9,7 @@
    - [https://youtu.be/3_-Je5XpbqY](https://youtu.be/3_-Je5XpbqY)
    - [https://youtu.be/gCNMyYr7F6w](https://youtu.be/gCNMyYr7F6w)
 1. `has()`
-   - [Демо](has/)
+   - [Демо](./has/)
    - [Спецификация](https://www.w3.org/TR/selectors-4/)
    - [https://doka.guide/css/has/](https://doka.guide/css/has/)
    - [https://css-tricks.com/the-css-has-selector/](https://css-tricks.com/the-css-has-selector/)
@@ -17,13 +17,13 @@
    - [https://youtu.be/OGJvhpoE8b4](https://youtu.be/OGJvhpoE8b4)
    - [https://youtu.be/aJ1XMcwys48](https://youtu.be/aJ1XMcwys48)
 1. `accent-color`
-   - [Демо]()
+   - [Демо](https://accent-color.glitch.me)
    - [Спецификация](https://www.w3.org/TR/css-ui-4/)
    - [https://doka.guide/css/accent-color/](https://doka.guide/css/accent-color/)
    - [https://youtu.be/MRahw3qnRBQ](https://youtu.be/MRahw3qnRBQ)
    - [https://www.smashingmagazine.com/2021/09/simplifying-form-styles-accent-color/](https://www.smashingmagazine.com/2021/09/simplifying-form-styles-accent-color/)
 1. Популяризация логических свойств в CSS
-  - [Демо](https://accent-color.glitch.me)
+  - [Демо]()
   - [Спецификация](https://drafts.csswg.org/css-logical/)
 1. `outline` по форме элемента
   - [Демо]()
