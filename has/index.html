@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+  <title>Демо для has()</title>
+  <style>
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      padding: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #18191C;
+      color: #FFFFFF;
+      font-family: "Roboto", sans-serif;
+      font-size: 18px;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 30px;
+      }
+    }
+
+    .container {
+      display: flex;
+      align-items: start;
+      gap: 50px;
+    }
+
+    .form {
+      position: relative;
+      display: grid;
+      padding: 25px;
+      gap: 25px;
+      width: 450px;
+      background-color: #282A2E;
+      color: #E6E6E6;
+    }
+
+    .form:has(input[type='text']) {
+      background-image: linear-gradient(rgb(161 0 255/ 0.3), rgb(112 196 255/ 0.5));
+    }
+
+    input {
+      width: 100%;
+      border: 1px solid #FFFFFF;
+      border-radius: 6px;
+      padding: 10px 15px;
+      background-color: transparent;
+      color: #FFFFFF;
+      font-size: 18px;
+      font-weight: 300;
+      font-family: inherit;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+
+    input:focus {
+      border-color: #2E9AFF;
+      outline: none;
+    }
+
+    button {
+      display: block;
+      min-width: 210px;
+      border: 2px solid transparent;
+      border-radius: 6px;
+      padding: 9px 15px;
+      color: #000000;
+      font-size: 18px;
+      font-weight: 300;
+      font-family: inherit;
+      transition: background-color 0.2s linear;
+      background-color: #2E9AFF;
+    }
+
+    button:hover {
+      background-color: #FFFFFF;
+      cursor: pointer;
+      transition: background-color 0.2s linear;
+    }
+
+    button:focus-visible {
+      border: 2px solid #FFFFFF;
+      outline: none;
+    }
+
+    button:focus {
+      border: 2px solid #FFFFFF;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form class="form">
+      <label for="email">Введите ваш емейл</label>
+      <input type="email">
+      <button>Подписаться</button>
+    </form>
+    <form class="form">
+      <label for="name">Введите ваше имя</label>
+      <input type="text">
+      <label for="email">Введите ваш емейл</label>
+      <input type="email">
+      <button>Зарегистрироваться</button>
+    </form>
+  </div>
+</body>
+</html>
