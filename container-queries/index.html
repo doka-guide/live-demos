@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" />
+  <title>Пример использования запросов от контейнера</title>
+  <style>
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      padding: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #18191c;
+      color: #ffffff;
+      font-family: "Roboto", sans-serif;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 30px;
+      }
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 500px;
+      padding: 25px;
+      overflow: hidden;
+      resize: both;
+      border: 1px solid #ffffff;
+      container: test-container / inline-size;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      max-height: 100%;
+      padding: 15px;
+      border: 1px solid #FF8630;
+      font-size: 18px;
+
+    }
+
+    .card img {
+      max-width: 250px;
+      max-height: 100%;
+      object-fit: cover;
+    }
+
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 17px;
+      font-weight: 500;
+      font-size: 1.375em;
+    }
+
+    p {
+      margin: 7px 0;
+      font-size: 1em;
+      line-height: 1.4;
+    }
+
+    @container test-container (min-width: 500px) {
+      .card {
+        flex-direction: row;
+        align-items: start;
+        border: 1px solid #2E9AFF;
+      }
+
+      .card img {
+        width: 50%;
+        max-width: 400px;
+      }
+    }
+
+    @container test-container (min-width: 960px) {
+      .card {
+        flex-direction: row-reverse;
+        border: 1px solid #F498AD;
+        font-size: 24px;
+
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <img src="../images/image-1.png" alt="" />
+      <div class="card-content">
+        <h2>Петька на даче</h2>
+        <p>
+          Петька на заднем дворе играл сам с собою в «классики» и надувал щеки, потому что так прыгать было значительно
+          легче.
+        </p>
+        <p>Андреев Л. Н., 1899</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
