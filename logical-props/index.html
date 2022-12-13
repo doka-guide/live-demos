@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Логические свойства</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
+  <style>
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      padding: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #18191C;
+      color: #FFFFFF;
+      font-family: "Roboto", sans-serif;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 30px;
+      }
+    }
+
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 17px;
+      font-weight: 500;
+      font-size: 1.375rem;
+    }
+
+    .button {
+      min-width: 210px;
+      border: 2px solid transparent;
+      border-radius: 6px;
+      padding: 9px 15px;
+      color: #000000;
+      font-size: 18px;
+      font-weight: 300;
+      font-family: inherit;
+      transition: background-color 0.2s linear;
+    }
+
+    .button:hover {
+      background-color: #FFFFFF;
+      cursor: pointer;
+      transition: background-color 0.2s linear;
+    }
+
+    .button:focus-visible {
+      border: 2px solid #FFFFFF;
+      outline: none;
+    }
+
+    .button:focus {
+      border: 2px solid #FFFFFF;
+      outline: none;
+    }
+
+    .button-blue {
+      background-color: #2E9AFF;
+    }
+
+    .controller {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .wrapper {
+      width: 930px;
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 50px;
+    }
+
+    .container {
+      width: 50%;
+
+    }
+
+    .card {
+      position: relative;
+      border: 1px solid #F498AD;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      background-image: repeating-linear-gradient(rgba(161, 0, 255), rgba(112, 196, 255));
+    }
+
+    .one .card {
+      padding-top: 50px;
+      padding-bottom: 25px;
+      padding-left: 40px;
+      padding-right: 80px;
+      border-top-width: 5px;
+      border-bottom-width: 15px;
+      border-left-width: 4px;
+      border-right-width: 20px;
+    }
+
+    .one .card::before {
+      top: 0;
+      left: 0;
+      width: 10px;
+      height: 100%;
+    }
+
+    .two .card {
+      padding-block-start: 50px;
+      padding-block-end: 25px;
+      padding-inline-start: 40px;
+      padding-inline-end: 80px;
+      border-block-start-width: 5px;
+      border-block-end-width: 15px;
+      border-inline-start-width: 4px;
+      border-inline-end-width: 20px;
+    }
+
+    .two .card::before {
+      inline-size: 10px;
+      block-size: 100%;
+      inset-block-start: 0;
+      inset-block-end: 0;
+      inset-inline-start: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="controller">
+      <button class="button button-blue" value="horizontal-tb">Справа направо</button>
+      <button class="button button-blue" value="horizontal-bt">Слево направо</button>
+      <button class="button button-blue" value="vertical-lr">Вертикально слева направо</button>
+      <button class="button button-blue" value="vertical-rl">Вертикально справа налево</button>
+    </div>
+    <div class="content">
+      <div class="container one">
+        <div class="card">
+          <h2>Карточка со свойствами по сторонам света</h2>
+        </div>
+      </div>
+      <div class="container two">
+        <div class="card">
+          <h2>Карточка с логическими свойствами</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const buttons = document.querySelectorAll('button')
+    const containers = document.querySelectorAll('.container')
+
+    buttons.forEach(button => {
+      button.addEventListener('click', event => {
+        console.log(event)
+        containers.forEach(container => {
+          container.style.writingMode = event.target.value
+        })
+      })
+    })
+  </script>
+</body>
+
+</html>

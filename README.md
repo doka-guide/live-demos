@@ -23,7 +23,7 @@
    - [https://youtu.be/MRahw3qnRBQ](https://youtu.be/MRahw3qnRBQ)
    - [https://www.smashingmagazine.com/2021/09/simplifying-form-styles-accent-color/](https://www.smashingmagazine.com/2021/09/simplifying-form-styles-accent-color/)
 1. Популяризация логических свойств в CSS
-  - [Демо]()
+  - [Демо](./logical-props/)
   - [Спецификация](https://drafts.csswg.org/css-logical/)
 1. `outline` по форме элемента
   - [Демо]()
