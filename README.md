@@ -23,16 +23,16 @@
    - [https://youtu.be/MRahw3qnRBQ](https://youtu.be/MRahw3qnRBQ)
    - [https://www.smashingmagazine.com/2021/09/simplifying-form-styles-accent-color/](https://www.smashingmagazine.com/2021/09/simplifying-form-styles-accent-color/)
 1. Популяризация логических свойств в CSS
-  - [Демо](./logical-props/)
-  - [Спецификация](https://drafts.csswg.org/css-logical/)
-  - [https://css-tricks.com/css-logical-properties-and-values/](https://css-tricks.com/css-logical-properties-and-values/)
-  - [https://web-standards.ru/articles/logical-css-props/](https://web-standards.ru/articles/logical-css-props/)
+   - [Демо](./logical-props/)
+   - [Спецификация](https://drafts.csswg.org/css-logical/)
+   - [https://css-tricks.com/css-logical-properties-and-values/](https://css-tricks.com/css-logical-properties-and-values/)
+   - [https://web-standards.ru/articles/logical-css-props/](https://web-standards.ru/articles/logical-css-props/)
 1. `outline` по форме элемента
-  - [Демо](./outline/)
+   - [Демо](./outline/)
 1. Новые единицы измерения вьюпорта
-  - [Спецификация](https://drafts.csswg.org/css-values-4/#viewport-relative-lengths)
-  - [https://youtu.be/xl9R8aTOW_I](https://youtu.be/xl9R8aTOW_I)
-1. `aspect-ratio`
+   - [Спецификация](https://drafts.csswg.org/css-values-4/#viewport-relative-lengths)
+   - [https://youtu.be/xl9R8aTOW_I](https://youtu.be/xl9R8aTOW_I)
+2. `aspect-ratio`
    - [Демо](./aspect-ratio/)  
    - [Спецификация](https://w3c.github.io/csswg-drafts/css-sizing-4/#aspect-ratio)
    - [https://css-tricks.com/almanac/properties/a/aspect-ratio/](https://css-tricks.com/almanac/properties/a/aspect-ratio/)
