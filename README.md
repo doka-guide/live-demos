@@ -26,7 +26,7 @@
   - [Демо](./logical-props/)
   - [Спецификация](https://drafts.csswg.org/css-logical/)
 1. `outline` по форме элемента
-  - [Демо]()
+  - [Демо](./outline/)
 1. Новые единицы измерения вьюпорта
   - [Демо]()
   - [Спецификация](https://drafts.csswg.org/css-values-4/#viewport-relative-lengths)

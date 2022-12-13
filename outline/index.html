@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>outline по форме элемента</title>
+  <style>
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      padding: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Roboto", sans-serif;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 30px;
+      }
+    }
+
+    form {
+      display: grid;
+      gap: 50px;
+    }
+
+    input[type="text"] {
+      width: 300px;
+      border: 1px solid #18191C;
+      border-radius: 6px;
+      padding: 10px 15px;
+      background-color: transparent;
+      font-size: 18px;
+      font-weight: 300;
+      font-family: inherit;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+
+    input[type="checkbox"] {
+      width: 24px;
+      height: 24px;
+      margin-right: 5px;
+      vertical-align: middle;
+      accent-color: #FF8630;
+    }
+
+
+    button {
+      display: block;
+      min-width: 210px;
+      border: 2px solid transparent;
+      border-radius: 80em;
+      padding: 9px 15px;
+      color: #000000;
+      font-size: 18px;
+      font-weight: 300;
+      font-family: inherit;
+      background-color: #FF8630;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <label for="">
+      Полюшко-поле
+      <input type="text">
+    </label>
+    <label>
+      <input type="checkbox" name="" id="">
+      Флажок
+    </label>
+    <button>Жмак</button>
+  </form>
+</body>
+</html>
