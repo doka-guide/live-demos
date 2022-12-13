@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>aspect-ratio</title>
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+      justify-content: center;
+      background-color: #18191C;
+      color: #FFFFFF;
+      font-family: "Roboto", sans-serif;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 30px;
+      }
+    }
+
+    img {
+      margin-right: 25px;
+      width: 500px;
+      object-fit: cover;
+      /* aspect-ratio: 4/1; */
+    }
+
+    video {
+      width: 400px;
+      object-fit: cover;
+      /* aspect-ratio: 1/1; */
+    }
+
+    p {
+      width: 300px;
+      padding: 25px;
+      background-color: #2E9AFF;
+      /* aspect-ratio: 4/3; */
+    }
+  </style>
+</head>
+<body>
+  <img src="../images/image-2.png" alt="">
+
+  <video src="../video/doka-video.mp4" autoplay muted loop></video>
+
+  <p>В лесу родилась ёлочка, в лесу она росла. Зимой и летом стройная, зелёная была.</p>
+</body>
+</html>
