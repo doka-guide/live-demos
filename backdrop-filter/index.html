@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Backdrop filter</title>
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+      justify-content: center;
+      background-color: #18191C;
+      color: #FFFFFF;
+      font-family: "Roboto", sans-serif;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 30px;
+      }
+    }
+
+    div {
+        padding: 25px;
+        width: 500px;
+        height: 500px;
+        position: relative;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+
+
+    p {
+      position: relative;
+      text-align: center;
+      z-index: 1;
+      width: 100%;
+      padding: 35px;
+      background: rgba(255,255,255,.2)
+    }
+
+    p + p {
+        margin-top: 50px;
+    }
+
+    .blur {
+        backdrop-filter: blur(5px);
+    }
+
+    .invert {
+        backdrop-filter: invert(70%);
+    }
+
+    .hue-rotate {
+        backdrop-filter: hue-rotate(90deg);
+    }
+  </style>
+</head>
+<body>
+    <div>
+        <img src="../images/image-2.png" alt="">
+        <p class="blur">blur</p>
+        <p class="invert">invert</p>
+        <p class="hue-rotate">hue-rotate</p>
+
+    </div>
+
+
+</body>
+</html>
