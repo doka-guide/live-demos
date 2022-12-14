@@ -26,7 +26,7 @@
    - [Демо](./logical-props/)
    - [Спецификация](https://drafts.csswg.org/css-logical/)
    - [CSS Logical Properties and Values](https://css-tricks.com/css-logical-properties-and-values/), CSS Tricks
-   - [Но­вые ло­ги­че­ские свой­ства в CSS!](https://web-standards.ru/articles/logical-css-props/)
+   - [Новые логические свойства в CSS!](https://web-standards.ru/articles/logical-css-props/)
 1. `outline` по форме элемента
    - [Демо](./outline/)
 1. Новые единицы измерения вьюпорта
@@ -53,8 +53,8 @@
 
 ## Не совсем про веб, но около
 
-- Истёк крайний срок внедрения в странах ЕС Европейского закона о доступности (European Accessibility Act, EAA). Подробнее в [What is the European Accessibility Act?](https://www.applause.com/blog/what-is-the-european-accessibility-act).
-- Законопроект Закон о доступности сайтов и программного обеспечения (Websites and Software Applications Accessibility Act). Подробнее в [The Websites and Software Applications Accessibility Act](https://www.3playmedia.com/blog/the-websites-and-software-applications-accessibility-act/).
+- Истёк крайний срок внедрения в странах ЕС Европейского закона о доступности (European Accessibility Act, EAA). Подробнее в [What is the European Accessibility Act?](https://www.applause.com/blog/what-is-the-european-accessibility-act)
+- Законопроект Закон о доступности сайтов и программного обеспечения (Websites and Software Applications Accessibility Act). Подробнее в [The Websites and Software Applications Accessibility Act](https://www.3playmedia.com/blog/the-websites-and-software-applications-accessibility-act/)
 
 ## За чем следить?
 
