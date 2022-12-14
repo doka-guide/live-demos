@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>findLast</title>
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+      justify-content: center;
+      background-color: #18191C;
+      color: #FFFFFF;
+      font-family: "Roboto", sans-serif;
+    }
+
+  </style>
+</head>
+<body>
+<script>
+  const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const elLast = arr.findLast(e => e > 4 && e < 8);
+  const elFirst = arr.find(e => e > 4 && e < 8);
+  console.log(`findLast: Ищем последний элемент больше 4 и меньше 8 в массиве: ${arr} --->`, elLast)
+  console.log(`find: Ищем первый элемент больше 4 и меньше 8 в массиве: ${arr} --->`, elFirst)
+
+</script>
+<p>Посмотрите в консоль :)</p>
+</body>
+</html>
