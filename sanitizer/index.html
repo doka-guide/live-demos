@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanitizer API</title>
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+      justify-content: center;
+      background-color: #18191C;
+      color: #FFFFFF;
+      font-family: "Roboto", sans-serif;
+    }
+
+  </style>
+</head>
+<body>
+    <h1>Cмотрите как работает sanitizer</h1>
+    <p>Cюда будем вставлять безопасный код. Попробуйте использовать тег code.</p>
+    <textarea placeholder="Вот тут печатаем небезопасный код"></textarea>
+<script>
+   const textarea = document.querySelector('textarea');
+    const sanitizer = new Sanitizer({
+        allowElements: ['code'],
+        blockElements: [],
+        dropElements: [],
+        allowAttributes: {},
+        dropAttributes: {},
+        allowCustomElements: true,
+        allowComments: false
+    });
+
+    console.log(sanitizer)
+
+    const p = document.querySelector('p');
+
+    textarea.addEventListener('input', (e) => {
+        p.setHTML(textarea.value, { sanitizer });
+    })
+
+</script>
+</body>
+</html>

@@ -32,8 +32,8 @@
 1. Новые единицы измерения вьюпорта
    - [Спецификация](https://drafts.csswg.org/css-values-4/#viewport-relative-lengths)
    - [It's viewports all the way down](https://youtu.be/xl9R8aTOW_I) (видео)
-2. `aspect-ratio`
-   - [Демо](./aspect-ratio/)  
+1. `aspect-ratio`
+   - [Демо](./aspect-ratio/)
    - [Спецификация](https://w3c.github.io/csswg-drafts/css-sizing-4/#aspect-ratio)
    - [aspect-ratio](https://css-tricks.com/almanac/properties/a/aspect-ratio/), CSS Tricks
 1. `inert`
@@ -50,11 +50,15 @@
 1. Примечания к черновику Accessibility Maturity Model
    - [For Review: Accessibility Maturity Model - Group Draft Note](https://www.w3.org/WAI/news/2022-09-06/maturity-model/)
    - [Accessibility Maturity Model](https://www.w3.org/TR/maturity-model/)
+1. Теперь можно [немного анимировать](https://chromestatus.com/feature/6037871692611584) `grid-template`
+1. Поддержка низкоуровневых API для работы с video и audio. [WebCodecs](https://w3c.github.io/webcodecs/)
 
 ## Не совсем про веб, но около
 
 - Истёк крайний срок внедрения в странах ЕС Европейского закона о доступности (European Accessibility Act, EAA). Подробнее в [What is the European Accessibility Act?](https://www.applause.com/blog/what-is-the-european-accessibility-act)
 - Законопроект Закон о доступности сайтов и программного обеспечения (Websites and Software Applications Accessibility Act). Подробнее в [The Websites and Software Applications Accessibility Act](https://www.3playmedia.com/blog/the-websites-and-software-applications-accessibility-act/)
+
+- Многие инструменты переписывают на Rust, посмотрите например на [turbopack](https://turbo.build/pack) или на [Apollo Router](https://www.apollographql.com/blog/announcement/backend/apollo-router-our-graphql-federation-runtime-in-rust/)
 
 ## За чем следить?
 
@@ -62,3 +66,10 @@
 1. Вложенные правила в CSS и директива `@nest` ([CSS Nesting Module](https://www.w3.org/TR/css-nesting-1/))
 1. Новый синтаксис диапазоны медиазапросов (>, <, ≥, ≤) ([Media Queries Level 5](https://www.w3.org/TR/mediaqueries-5/#mq-range-context))
 1. `grid-template-rows: masonry;` ([CSS Grid Layout Module Level 3](https://drafts.csswg.org/css-grid-3/#masonry-layout-algorithm))
+1. Развитие atomic css и проектов на его основе. Например, [Tailwind CSS](https://tailwindcss.com/)
+1. Разработчики пытаются переосмыслить свой подход к приватности и безопасности. [Подробности](https://developer.chrome.com/docs/privacy-sandbox/overview/)
+1. [Remix](https://remix.run/) – фреймворк для создания веб-приложений становится все популяренее
+
+## Интересные факты
+
+1. Браузеры изо всех сил стараются сделать процесс рендеринга эффективнее. Посмотрите, например, как [все это устроено в Chromium](https://developer.chrome.com/articles/renderingng/)

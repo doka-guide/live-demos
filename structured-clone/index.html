@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>structured-clone</title>
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+      justify-content: center;
+      background-color: #18191C;
+      color: #FFFFFF;
+      font-family: "Roboto", sans-serif;
+    }
+
+  </style>
+</head>
+<body>
+<script>
+    // structured clone
+    const cat = {
+    name: "Машка",
+    bestFriend: {
+        name: "Полина"
+    }
+    };
+
+    const shallowCopy = { ...cat };
+    const deepCopy = structuredClone(cat);
+
+    console.log('Изучаем structured clone');
+
+    console.log('Имя из простой копии -->', shallowCopy.bestFriend.name);
+
+    shallowCopy.bestFriend.name = "Таня";
+
+    console.log("Имя в оригинальном объекте поменялось -->", cat.bestFriend.name); // oops больше не Полина
+
+    deepCopy.bestFriend.name = "Вася";
+    console.log("Имя в оригинальном объекте не поменялось -->", cat.bestFriend.name); // Таня (не поменялось с предыдущего раза)
+
+</script>
+<p>Посмотрите в консоль :)</p>
+</body>
+</html>
